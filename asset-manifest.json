@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/eql/static/css/main.31d6cfe0.css",
+    "main.js": "/eql/static/js/main.c9d476b3.js",
+    "index.html": "/eql/index.html",
+    "main.c9d476b3.js.map": "/eql/static/js/main.c9d476b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.c9d476b3.js"
+  ]
+}
