@@ -1,0 +1,24 @@
+.TopBanner {
+    background-color: #ccc;
+    border-bottom: 1px solid #000;
+    line-height: 25px;
+    text-align: center;
+
+    p {
+        line-height: 25px;
+        font-size: 13px;
+        font-weight: 700;
+        cursor: pointer;
+        animation: blink-effect 5s ease-in-out infinite;
+    }
+}
+
+@keyframes blink-effect {
+
+
+
+    50% {
+        opacity: 0;
+    }
+
+}
