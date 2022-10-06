@@ -11,6 +11,7 @@ import CategoryList from './components/CategoryList';
 import ContentSlide from './components/ContentSlide';
 import SubContent from './components/SubContent';
 import BigCate from './components/BigCate';
+import Footer from './components/Footer';
 
 
 
@@ -28,6 +29,7 @@ function App() {
       <ContentSlide />
       <SubContent />
       <BigCate />
+      <Footer/>
     </Wrapper>
   );
 }
