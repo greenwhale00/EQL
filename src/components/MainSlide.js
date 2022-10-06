@@ -2,9 +2,7 @@ import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-
 
 import '../css/Main.scss'
 
@@ -34,13 +32,12 @@ const MainSlide = () => {
         <div className='MainSlide'>
             <Slider
                 arrows={false}
-                autoplay={true}
+                autoplay={false}
                 infinite={true}
                 pauseOnHover={false}
                 ref={MainSlide}
                 dots={false}
                 slidesToShow={3}
-
             >
                 {
                     main_content.map((it, idx) => {

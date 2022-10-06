@@ -32,3 +32,23 @@
         display: flex;
     }
 }
+
+.MainContent {
+    display: flex;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+    figure {
+        flex: 1;
+        border-left: 1px solid #000;
+
+        img {
+            border-bottom: 1px solid #000;
+        }
+
+
+        div {
+            text-align: center;
+        }
+    }
+}
