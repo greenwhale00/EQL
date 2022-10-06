@@ -3,12 +3,14 @@ import Wrapper from './pages/Wrapper';
 
 import TopBanner from './components/TopBanner';
 import TopHeader from './components/TopHeader';
-
-
-
-import './App.css';
 import LogoHeader from './components/LogoHeader';
 import NavHeader from './components/NavHeader';
+import MainSlide from './components/MainSlide';
+
+import './App.css';
+
+
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
       <TopHeader />
       <LogoHeader />
       <NavHeader />
+      <MainSlide />
     </Wrapper>
   );
 }
