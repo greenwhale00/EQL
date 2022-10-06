@@ -17,4 +17,31 @@
     }
 }
 
-.BigCate {}
+.BigCate {
+    display: flex;
+    border-bottom: 1px solid #000;
+
+    figure {
+        flex: 1;
+        border-left: 1px solid #000;
+
+        div {
+            padding: 26px 30px 30px 30px;
+
+            strong {
+                display: block;
+                font-size: 22px;
+                margin-bottom: 9px;
+            }
+
+            p {
+                font-size: 18px;
+                color: #999;
+            }
+
+            img {
+                width: 350px;
+            }
+        }
+    }
+}

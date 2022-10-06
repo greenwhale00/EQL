@@ -7,12 +7,10 @@ import LogoHeader from './components/LogoHeader';
 import NavHeader from './components/NavHeader';
 import MainSlide from './components/MainSlide';
 import MainContent from './components/MainContent';
-
-
-
 import CategoryList from './components/CategoryList';
 import ContentSlide from './components/ContentSlide';
 import SubContent from './components/SubContent';
+import BigCate from './components/BigCate';
 
 
 
@@ -29,6 +27,7 @@ function App() {
       <CategoryList />
       <ContentSlide />
       <SubContent />
+      <BigCate />
     </Wrapper>
   );
 }
