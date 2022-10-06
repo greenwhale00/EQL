@@ -7,12 +7,16 @@ import TopHeader from './components/TopHeader';
 
 
 import './App.css';
+import LogoHeader from './components/LogoHeader';
+import NavHeader from './components/NavHeader';
 
 function App() {
   return (
     <Wrapper>
       <TopBanner />
       <TopHeader />
+      <LogoHeader />
+      <NavHeader />
     </Wrapper>
   );
 }
