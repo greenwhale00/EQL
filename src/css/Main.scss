@@ -13,11 +13,22 @@
     line-height: 35px;
     background-color: #000;
 
-
     ul {
         display: flex;
         color: #ccc;
         font-size: 15px;
         font-weight: 300;
+    }
+}
+
+
+.MainSlide {
+    figure {
+
+        text-align: center;
+    }
+
+    .slide {
+        display: flex;
     }
 }

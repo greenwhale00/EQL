@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
+import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+
+
 import '../css/Main.scss'
 
 
@@ -36,7 +39,6 @@ const MainSlide = () => {
                 pauseOnHover={false}
                 ref={MainSlide}
                 dots={false}
-                centerMode={true}
                 slidesToShow={3}
 
             >
@@ -45,10 +47,10 @@ const MainSlide = () => {
                         return (
                             <figure className={`itm itm0${idx + 1}`}>
                                 <img src={process.env.PUBLIC_URL + `/assets/images/main_slider0${it.id}.jpg`} alt="" />
-                                <div>
-                                    <span></span>
+                                <div className='slide'>
+                                    <span><FiArrowLeft onClick={() => MainSlide.current.slickPrev()} className="icon left" /></span>
                                     <p>{it.content}</p>
-                                    <span></span>
+                                    <span> <FiArrowRight onClick={() => MainSlide.current.slickNext()} className="icon right" /></span>
                                 </div>
                             </figure>
                         )
