@@ -32,15 +32,19 @@ const MainSlide = () => {
             <Slider
                 arrows={false}
                 autoplay={true}
+                infinite={true}
                 pauseOnHover={false}
                 ref={MainSlide}
                 dots={false}
+                centerMode={true}
+                slidesToShow={3}
+
             >
                 {
                     main_content.map((it, idx) => {
                         return (
                             <figure className={`itm itm0${idx + 1}`}>
-                                <img src={process.env.PUBLIC_URL + "/assets/images/main_slider0{}.jpg"} alt="" />
+                                <img src={process.env.PUBLIC_URL + `/assets/images/main_slider0${it.id}.jpg`} alt="" />
                                 <div>
                                     <span></span>
                                     <p>{it.content}</p>
