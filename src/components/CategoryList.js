@@ -29,7 +29,7 @@ const CategoryList = () => {
                 List.map((it, idx) => {
                     return (
                         <ul>
-                            <li></li>
+                            <li key={idx}><a href="">{it.title}</a></li>
                         </ul>
                     )
                 })

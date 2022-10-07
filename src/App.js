@@ -25,11 +25,11 @@ function App() {
       <NavHeader />
       <MainSlide />
       <MainContent />
-      <CategoryList />
+
       <ContentSlide />
       <SubContent />
       <BigCate />
-      <Footer/>
+      <Footer />
     </Wrapper>
   );
 }

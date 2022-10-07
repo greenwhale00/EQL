@@ -2,6 +2,8 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+import CategoryList from './CategoryList';
+
 
 const contentTitle = [
     { id: 1, title: "GBH 어패럴 22FALL 컬렉션 단독 10%" },
@@ -12,24 +14,35 @@ const contentTitle = [
 
 const ContentSlide = () => {
     return (
-        <div className='ContentSlide'>
-            <Slider>
-                {
-                    contentTitle.map((it, idx) => {
-                        return (
-                            <figure>
-                                <img src={process.env.PUBLIC_URL + `/assets/images/mid_slide0${it.id}.jpg`} alt="" />
-                                <div className='slide'>
-                                    <span><FiArrowLeft onClick={() => ContentSlide.current.slickPrev()} className="icon left" /></span>
-                                    <p>{it.title}</p>
-                                    <span> <FiArrowRight onClick={() => ContentSlide.current.slickNext()} className="icon right" /></span>
-                                </div>
-                            </figure>
-                        )
-                    })
-                }
-            </Slider>
-        </div>
+        <>
+            <CategoryList />
+            <div className='ContentSlide'>
+                <Slider
+                    arrows={false}
+                    autoplay={false}
+                    infinite={true}
+                    pauseOnHover={false}
+                    ref={ContentSlide}
+                    dots={false}
+                >
+                    {
+                        contentTitle.map((it, idx) => {
+                            return (
+                                <figure>
+                                    <img src={process.env.PUBLIC_URL + `/assets/images/mid_slide0${it.id}.jpg`} alt="" />
+                                    <div className='slide'>
+                                        <span><FiArrowLeft onClick={() => ContentSlide.current.slickPrev()} className="icon left" /></span>
+                                        <p>{it.title}</p>
+                                        <span> <FiArrowRight onClick={() => ContentSlide.current.slickNext()} className="icon right" /></span>
+                                    </div>
+                                </figure>
+                            )
+                        })
+                    }
+                </Slider>
+            </div>
+        </>
+
     )
 }
 
