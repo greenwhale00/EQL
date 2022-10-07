@@ -44,11 +44,13 @@ const MainSlide = () => {
                         return (
                             <figure className={`itm itm0${idx + 1}`}>
                                 <img src={process.env.PUBLIC_URL + `/assets/images/main_slider0${it.id}.jpg`} alt="" />
+
                                 <div className='slide'>
                                     <span><FiArrowLeft onClick={() => MainSlide.current.slickPrev()} className="icon left" /></span>
                                     <p>{it.content}</p>
                                     <span> <FiArrowRight onClick={() => MainSlide.current.slickNext()} className="icon right" /></span>
                                 </div>
+
                             </figure>
                         )
                     })

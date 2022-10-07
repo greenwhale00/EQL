@@ -24,12 +24,30 @@
 
 .MainSlide {
     figure {
-
         text-align: center;
+
+        img {
+            border-right: 1px solid #000;
+        }
     }
 
     .slide {
+        text-align: center;
         display: flex;
+        height: 60px;
+        line-height: 60px;
+        font-size: 17px;
+        font-weight: 500;
+        
+        span {
+            width: 60px;
+            border-right:1px solid #000 ;
+        }
+
+        p {
+            
+            border-right:1px solid #000 ;
+        }
     }
 }
 
@@ -39,16 +57,22 @@
     border-bottom: 1px solid #000;
 
     figure {
-        flex: 1;
+        // flex: 1;
+        width: 25%;
         border-left: 1px solid #000;
 
         img {
             border-bottom: 1px solid #000;
         }
 
-
         div {
+            font-size: 17px;
             text-align: center;
+            line-height: 60px;
+            font-weight: 500;
+            overflow: hidden;
+white-space: nowrap;
+            text-overflow: ellipsis;
         }
     }
 }

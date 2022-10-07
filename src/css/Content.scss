@@ -1,3 +1,35 @@
+.ContentSlide  {
+    figure {
+        img {
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+    }
+    .slide {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        line-height: 60px;
+        font-size: 17px;
+        font-weight: 500;
+
+        span~span {
+            width: 60px; 
+            border-right:1px solid #000 ;           
+        }
+ 
+        p {
+            display: block;
+            width: 1800px;
+            border-left: 1px solid #000;
+            border-right:1px solid #000;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+
 .SubContent {
     display: flex;
     border-top: 1px solid #000;
@@ -12,7 +44,10 @@
         }
 
         div {
+            line-height: 60px;
             text-align: center;
+            font-size: 17px;
+            font-weight: 500;
         }
     }
 }
@@ -31,16 +66,20 @@
             strong {
                 display: block;
                 font-size: 22px;
+                font-weight: 500;
                 margin-bottom: 9px;
             }
 
             p {
                 font-size: 18px;
+                font-weight: 500;
                 color: #999;
+                padding-bottom: 69px;
             }
 
             img {
                 width: 350px;
+                border: 1px solid #000;
             }
         }
     }

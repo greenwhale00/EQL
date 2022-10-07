@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import CategoryList from './CategoryList';
-
+import '../css/Content.scss'
 
 const contentTitle = [
     { id: 1, title: "GBH 어패럴 22FALL 컬렉션 단독 10%" },
@@ -13,10 +13,12 @@ const contentTitle = [
 ]
 
 const ContentSlide = () => {
+    const ContentSlide = useRef(null);
     return (
         <>
             <CategoryList />
-            <div className='ContentSlide'>
+
+            <section className='ContentSlide'>
                 <Slider
                     arrows={false}
                     autoplay={false}
@@ -40,7 +42,7 @@ const ContentSlide = () => {
                         })
                     }
                 </Slider>
-            </div>
+            </section>
         </>
 
     )
